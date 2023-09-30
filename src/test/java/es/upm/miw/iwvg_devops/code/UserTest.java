@@ -13,12 +13,12 @@ public class UserTest {
 
     @BeforeEach
     public void setUp() {
-        user = new User("1", "John", "Doe", new ArrayList<>());
+        user = new User("1", "Jorge", "Muñoz", new ArrayList<>());
     }
 
     @Test
     public void testFullName() {
-        assertEquals("John Doe", user.fullName());
+        assertEquals("Jorge Muñoz", user.fullName());
     }
 
     @Test
@@ -51,13 +51,13 @@ public class UserTest {
 
     @Test
     public void testSetAndGetName() {
-        user.setName("Alice");
-        assertEquals("Alice", user.getName());
+        user.setName("Jorge");
+        assertEquals("Jorge", user.getName());
     }
 
     @Test
     public void testSetAndGetFamilyName() {
-        user.setFamilyName("Smith");
-        assertEquals("Smith", user.getFamilyName());
+        user.setFamilyName("Pavon");
+        assertEquals("Pavon", user.getFamilyName());
     }
 }
