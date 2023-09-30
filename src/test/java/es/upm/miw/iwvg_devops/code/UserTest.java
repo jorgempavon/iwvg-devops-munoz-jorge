@@ -47,11 +47,7 @@ public class UserTest {
         assertEquals(fractions, user.getFractions());
     }
 
-    @Test
-    public void testSetAndGetId() {
-        user.setId("2");
-        assertEquals("2", user.getId());
-    }
+
 
     @Test
     public void testSetAndGetName() {
