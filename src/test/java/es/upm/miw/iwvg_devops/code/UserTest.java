@@ -17,6 +17,19 @@ public class UserTest {
     }
 
     @Test
+    public void testConstructor(){
+        this.user=new User();
+        assertNotNull(user);
+    }
+    @Test
+    public void testGetId(){
+        assertEquals("1",this.user.getId());
+    }
+    @Test
+    public void testToString(){
+        assertEquals("User{id='1', name='Jorge', familyName='Muñoz', fractions=[]}",this.user.toString());
+    }
+    @Test
     public void testFullName() {
         assertEquals("Jorge Muñoz", user.fullName());
     }
